@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffe7ba;
+}
+
+.page {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+
+.sister-details, .brother-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sister-details img, .brother-details img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.sister-details h2, .brother-details h2 {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.sister-details p, .brother-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+button {
+  background-color: #ff7e5f;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #feb47b;
+}
+
+/* General page styles */
+.page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home {
+  /* Background image */
+  background-image: 'family.jpg';
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.home::before {
+  /* Semi-transparent overlay */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+  z-index: -1;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2; /* Ensure text is above the overlay */
+  color: white;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.home-content img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+}
